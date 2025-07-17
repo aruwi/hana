@@ -10,7 +10,7 @@ const apiEmail = "kuliahkuyarab@gmail.com"; // Ganti dengan email yang kalian gu
 const accountID = "39e4c81f1704ab0c44186dc286d7b63c"; // Ganti dengan Account ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 const zoneID = "66abe6596f58798be4862fc02d03254e"; // Ganti dengan Zone ID kalian (https://dash.cloudflare.com -> Klik domain yang kalian gunakan)
 let isApiReady = false;
-let proxyIP = "";
+let proxyIP = "https://raw.githubusercontent.com/mrsyd-my/proxycf/refs/heads/main/ProxyList.txt";
 let cachedProxyList = [];
 
 // Constant
