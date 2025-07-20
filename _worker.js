@@ -21,7 +21,7 @@ const KV_PROXY_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/
 const PROXY_BANK_URL = "https://raw.githubusercontent.com/FoolVPN-ID/Nautica/refs/heads/main/proxyList.txt";
 const DNS_SERVER_ADDRESS = "1.1.1.1";
 const DNS_SERVER_PORT = 53;
-const PROXY_HEALTH_CHECK_API = "https://id1.foolvpn.me/api/v1/check";
+const PROXY_HEALTH_CHECK_API = "https://apijk-giexrk65o-aruwi7s-projects.vercel.app/";
 const CONVERTER_URL = "https://api.foolvpn.me/convert";
 const DONATE_LINK = "https://saweria.com/aruwi/tip";
 const BAD_WORDS_LIST =
@@ -46,6 +46,8 @@ async function getKVProxyList(kvProxyUrl = KV_PROXY_URL) {
   } else {
     return {};
   }
+async function checkProxyHealth(proxyIP, proxyPort) 
+{ const url = ${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}&port=${proxyPort}; const response = await fetch(url); return await response.json(); }
 }
 
 async function getProxyList(proxyBankUrl = PROXY_BANK_URL) {
