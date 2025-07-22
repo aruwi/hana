@@ -46,8 +46,6 @@ async function getKVProxyList(kvProxyUrl = KV_PROXY_URL) {
   } else {
     return {};
   }
-async function checkProxyHealth(proxyIP, proxyPort) 
-{ const url = ${PROXY_HEALTH_CHECK_API}?ip=${proxyIP}&port=${proxyPort}; const response = await fetch(url); return await response.json(); }
 }
 
 async function getProxyList(proxyBankUrl = PROXY_BANK_URL) {
